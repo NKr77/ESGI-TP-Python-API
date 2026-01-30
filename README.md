@@ -31,7 +31,7 @@ L'API est accessible à l'adresse : http://127.0.0.1:8000
 ## Tests Postman
 
 La collection de tests incluant les requêtes pré-configurées est disponible via le lien suivant :
-[Collection Postman - NK Team's Workspace](https://krusicnicolas-8422704.postman.co/workspace/NK-Team's-Workspace~55c351b5-2b5b-41e0-823a-09f811529620/collection/51921457-e59ea812-e6eb-4feb-a508-1ccbdf1f9316?action=share&creator=51921457)
+[Collection Postman - NK Team's Workspace](https://krusicnicolas-8422704.postman.co/workspace/NK-Team's-Workspace~55c351b5-2b5b-41e0-823a-09f811529620/collection/51921457-7bcd2ccb-7e64-40d3-8970-30edafdcd681?action=share&creator=51921457)
 
 ## Modèle de données
 
