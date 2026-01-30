@@ -23,10 +23,10 @@ L'API est accessible à l'adresse : http://127.0.0.1:8000
 
 | Méthode | Route | Description |
 | --- | --- | --- |
-| GET | /servers | Liste tous les serveurs. |
-| POST | /servers | Ajoute ou met à jour un serveur. |
-| PUT | /servers/{id} | Modifie un serveur spécifique. |
-| DELETE | /servers/{id} | Supprime un serveur spécifique. |
+| GET | /api/v1/servers | Liste tous les serveurs. |
+| POST | /api/v1/servers | Ajoute ou met à jour un serveur. |
+| PUT | /api/v1/servers/{id} | Modifie un serveur spécifique. |
+| DELETE | /api/v1/servers/{id} | Supprime un serveur spécifique. |
 
 ## Tests Postman
 

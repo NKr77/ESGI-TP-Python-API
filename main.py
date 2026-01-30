@@ -19,12 +19,12 @@ servers_db = []
 # --- ENDPOINTS ---
 
 # Lire la liste des serveurs
-@app.get("/servers", response_model=List[Server])
+@app.get("/api/v1/servers", response_model=List[Server])
 def get_all_servers():
     return servers_db
 
 # Ajouter ou modifier un serveur
-@app.post("/servers", status_code=201)
+@app.post("/api/v1/servers", status_code=201)
 def add_or_update_server(new_server: Server):
     # On cherche si l'ID existe déjà dans notre liste
     for index, s in enumerate(servers_db):
@@ -38,7 +38,7 @@ def add_or_update_server(new_server: Server):
     return {"message": "Serveur ajouté avec succès", "data": new_server}
 
 # Modifier un serveur existant
-@app.put("/servers/{server_id}")
+@app.put("/api/v1/servers/{server_id}")
 def update_server(server_id: int, updated_server: Server):
     for index, s in enumerate(servers_db):
         if s["id"] == server_id:
@@ -49,7 +49,7 @@ def update_server(server_id: int, updated_server: Server):
     raise HTTPException(status_code=404, detail="Serveur non trouvé")
 
 # Supprimer un serveur
-@app.delete("/servers/{server_id}")
+@app.delete("/api/v1/servers/{server_id}")
 def delete_server(server_id: int):
     for index, s in enumerate(servers_db):
         if s["id"] == server_id:
